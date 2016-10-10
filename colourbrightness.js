@@ -15,7 +15,6 @@
 		function getBackgroundColor(el) {
 			while(el.tagName.toLowerCase() != 'html') {
 				var style = el.style.length === 0 ? window.getComputedStyle(el) : el.style;
-				bgColor = style.backgroundColor;
 				if(style.backgroundColor != 'rgba(0, 0, 0, 0)' && style.backgroundColor != 'transparent') {
 					break;
 				}
