@@ -1,18 +1,16 @@
-### colourBrightness.js
+### colourBrightness.js - Now without jQuery!
 
-A lightweight and easy-to-use jQuery plugin that determines if the background colour of an element is light or dark.
+A lightweight and easy-to-use plugin that determines if the background colour of an element is light or dark.
 
 ### How does it work?
 
-Include jQuery and the source file into your project and target the element with `colourBrightness()`.
+Include the source file into your project and target the element with `colourBrightness()`.
 
 ```html
-<script src="path/to/jquery.min.js"></script>
-<script src="path/to/jquery.colourBrightness.js"></script>
+<script src="path/to/colourBrightness.js"></script>
 <script>
-  $(document).ready(function(){
-    // Target your element
-    $('.lightbox').colourBrightness();
+  (function() {
+    window.colourBrightness(document.querySelector('.lightbox'));
   });
 </script>
 ```
@@ -33,7 +31,4 @@ From there, you can add what colour you'd like to display depending on the backg
 }
 ```
 
-Easy!
-
-### Examples
-[HEX to RGB Converter](http://hex.colorrrs.com)
+Easy and don't need use jQuery!
